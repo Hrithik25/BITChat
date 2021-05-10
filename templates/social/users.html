@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+<div class="container">
+    <ul class="collection">
+        {% for user in users %}
+        <li class="collection-item">
+            <div>{{ user }}<a href="#!" class="secondary-content"><i class="material-icons">Add Friend</i></a></div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+
+{% endblock %}
